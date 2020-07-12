@@ -1,0 +1,225 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>BrowserMainWindow</class>
+ <widget class="QMainWindow" name="BrowserMainWindow">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>400</width>
+    <height>300</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>BrowserMainWindow</string>
+  </property>
+  <widget class="QWidget" name="centralWidget"/>
+  <widget class="QMenuBar" name="menuBar">
+   <property name="geometry">
+    <rect>
+     <x>0</x>
+     <y>0</y>
+     <width>400</width>
+     <height>21</height>
+    </rect>
+   </property>
+   <widget class="QMenu" name="menuFile">
+    <property name="title">
+     <string>File</string>
+    </property>
+    <addaction name="actionNew_Tab"/>
+    <addaction name="actionNew_Window"/>
+    <addaction name="separator"/>
+    <addaction name="actionQuit"/>
+   </widget>
+   <widget class="QMenu" name="menuView">
+    <property name="title">
+     <string>View</string>
+    </property>
+    <addaction name="actionStop"/>
+    <addaction name="actionReload_Page"/>
+    <addaction name="separator"/>
+    <addaction name="actionZoom_in"/>
+    <addaction name="actionZoom_out"/>
+    <addaction name="actionReset_Zoom"/>
+    <addaction name="separator"/>
+    <addaction name="actionPage_Source"/>
+    <addaction name="actionFull_Screen"/>
+   </widget>
+   <widget class="QMenu" name="menuBookmarks">
+    <property name="title">
+     <string>Bookmarks</string>
+    </property>
+    <addaction name="actionShow_all_bookmarks"/>
+   </widget>
+   <widget class="QMenu" name="menuHistory">
+    <property name="title">
+     <string>History</string>
+    </property>
+    <addaction name="actionShow_all_history"/>
+   </widget>
+   <widget class="QMenu" name="menuHelp">
+    <property name="title">
+     <string>Help</string>
+    </property>
+    <addaction name="actionAbout_Qool_Browser"/>
+   </widget>
+   <addaction name="menuFile"/>
+   <addaction name="menuView"/>
+   <addaction name="menuBookmarks"/>
+   <addaction name="menuHistory"/>
+   <addaction name="menuHelp"/>
+  </widget>
+  <widget class="QToolBar" name="mainToolBar">
+   <attribute name="toolBarArea">
+    <enum>TopToolBarArea</enum>
+   </attribute>
+   <attribute name="toolBarBreak">
+    <bool>false</bool>
+   </attribute>
+  </widget>
+  <widget class="QStatusBar" name="statusBar"/>
+  <action name="actionNew_Tab">
+   <property name="icon">
+    <iconset resource="browserassets.qrc">
+     <normaloff>:/Icons/Assets/new_tab.png</normaloff>:/Icons/Assets/new_tab.png</iconset>
+   </property>
+   <property name="text">
+    <string>New Tab</string>
+   </property>
+   <property name="shortcut">
+    <string>Ctrl+T</string>
+   </property>
+  </action>
+  <action name="actionNew_Window">
+   <property name="icon">
+    <iconset resource="browserassets.qrc">
+     <normaloff>:/Icons/Assets/new_window.png</normaloff>:/Icons/Assets/new_window.png</iconset>
+   </property>
+   <property name="text">
+    <string>New Window</string>
+   </property>
+   <property name="shortcut">
+    <string>Ctrl+N</string>
+   </property>
+  </action>
+  <action name="actionQuit">
+   <property name="icon">
+    <iconset resource="browserassets.qrc">
+     <normaloff>:/Icons/Assets/quit.png</normaloff>:/Icons/Assets/quit.png</iconset>
+   </property>
+   <property name="text">
+    <string>Quit</string>
+   </property>
+   <property name="shortcut">
+    <string>Ctrl+Q</string>
+   </property>
+  </action>
+  <action name="actionStop">
+   <property name="icon">
+    <iconset resource="browserassets.qrc">
+     <normaloff>:/Icons/Assets/stop.png</normaloff>:/Icons/Assets/stop.png</iconset>
+   </property>
+   <property name="text">
+    <string>Stop</string>
+   </property>
+  </action>
+  <action name="actionReload_Page">
+   <property name="icon">
+    <iconset resource="browserassets.qrc">
+     <normaloff>:/Icons/Assets/refresh.png</normaloff>:/Icons/Assets/refresh.png</iconset>
+   </property>
+   <property name="text">
+    <string>Reload Page</string>
+   </property>
+   <property name="shortcut">
+    <string>F5</string>
+   </property>
+  </action>
+  <action name="actionZoom_in">
+   <property name="icon">
+    <iconset resource="browserassets.qrc">
+     <normaloff>:/Icons/Assets/zoom_in.png</normaloff>:/Icons/Assets/zoom_in.png</iconset>
+   </property>
+   <property name="text">
+    <string>Zoom in</string>
+   </property>
+   <property name="shortcut">
+    <string>Ctrl++</string>
+   </property>
+  </action>
+  <action name="actionZoom_out">
+   <property name="icon">
+    <iconset resource="browserassets.qrc">
+     <normaloff>:/Icons/Assets/zoom_out.png</normaloff>:/Icons/Assets/zoom_out.png</iconset>
+   </property>
+   <property name="text">
+    <string>Zoom out</string>
+   </property>
+   <property name="shortcut">
+    <string>Ctrl+-</string>
+   </property>
+  </action>
+  <action name="actionReset_Zoom">
+   <property name="text">
+    <string>Reset Zoom</string>
+   </property>
+   <property name="shortcut">
+    <string>Ctrl+0</string>
+   </property>
+  </action>
+  <action name="actionPage_Source">
+   <property name="icon">
+    <iconset resource="browserassets.qrc">
+     <normaloff>:/Icons/Assets/page_source.png</normaloff>:/Icons/Assets/page_source.png</iconset>
+   </property>
+   <property name="text">
+    <string>Page Source</string>
+   </property>
+  </action>
+  <action name="actionFull_Screen">
+   <property name="icon">
+    <iconset resource="browserassets.qrc">
+     <normaloff>:/Icons/Assets/fullscreen.png</normaloff>:/Icons/Assets/fullscreen.png</iconset>
+   </property>
+   <property name="text">
+    <string>Enter/Exit Full Screen</string>
+   </property>
+   <property name="shortcut">
+    <string>F11</string>
+   </property>
+  </action>
+  <action name="actionShow_all_bookmarks">
+   <property name="icon">
+    <iconset resource="browserassets.qrc">
+     <normaloff>:/Icons/Assets/favourite.png</normaloff>:/Icons/Assets/favourite.png</iconset>
+   </property>
+   <property name="text">
+    <string>Show all bookmarks</string>
+   </property>
+  </action>
+  <action name="actionShow_all_history">
+   <property name="icon">
+    <iconset resource="browserassets.qrc">
+     <normaloff>:/Icons/Assets/history.png</normaloff>:/Icons/Assets/history.png</iconset>
+   </property>
+   <property name="text">
+    <string>Show all history</string>
+   </property>
+  </action>
+  <action name="actionAbout_Qool_Browser">
+   <property name="icon">
+    <iconset resource="browserassets.qrc">
+     <normaloff>:/Icons/Assets/about.png</normaloff>:/Icons/Assets/about.png</iconset>
+   </property>
+   <property name="text">
+    <string>About Qool Browser</string>
+   </property>
+  </action>
+ </widget>
+ <layoutdefault spacing="6" margin="11"/>
+ <resources>
+  <include location="browserassets.qrc"/>
+ </resources>
+ <connections/>
+</ui>

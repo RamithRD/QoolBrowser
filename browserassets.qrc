@@ -1,0 +1,23 @@
+<RCC>
+    <qresource prefix="/Loader">
+        <file>Assets/loader.gif</file>
+    </qresource>
+    <qresource prefix="/Icons">
+        <file>Assets/back.png</file>
+        <file>Assets/forward.png</file>
+        <file>Assets/refresh.png</file>
+        <file>Assets/search.png</file>
+        <file>Assets/favourite.png</file>
+        <file>Assets/browser_icon.png</file>
+        <file>Assets/about.png</file>
+        <file>Assets/fullscreen.png</file>
+        <file>Assets/history.png</file>
+        <file>Assets/new_tab.png</file>
+        <file>Assets/new_window.png</file>
+        <file>Assets/page_source.png</file>
+        <file>Assets/quit.png</file>
+        <file>Assets/stop.png</file>
+        <file>Assets/zoom_in.png</file>
+        <file>Assets/zoom_out.png</file>
+    </qresource>
+</RCC>
